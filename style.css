@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: hsl(217, 54%, 11%);
+    color: white;
+    font-size: 18px;
+    font-family: 'Outfit', sans-serif;
+}
+.container {
+    margin: 70px 20px;
+    padding: 25px;
+    border-radius: 15px;
+    background-color: hsl(216, 50%, 16%);
+}
+.img-container img {
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+#ETH-time {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#ETH-time img{
+    height: 1em;
+}
+.text-container h2, p {
+    margin-bottom: 10px;
+}
+.artist-container {
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+}
+.artist-container img {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+    border-radius: 50%;
+    border: 1px solid #ffffff;
+}
+.artist-container p{
+    font-size: 0.9rem;
+}
+.svg {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+#icon, #icon2 {
+    margin-right: 10px;
+}
+#icon img, #icon2 img {
+    height: 1.2em;
+}
+hr {
+    border:1px solid hsl(215, 32%, 27%);
+}
+#eth {
+    color: hsl(178, 100%, 50%);
+    font-weight: 700;
+}
+.text-container p {
+    color:hsl(215, 51%, 70%);
+    font-weight: 700;
+}
+.img-container{
+    position: relative;
+    z-index: 1;
+}
+#image {
+    z-index: 2;
+}
+#eye-icon{
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 40%;
+    width: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: -1;
+}
+#Name {
+    color: #ffffff;
+}
+#Name:hover, .text-container h2:hover {
+    cursor: pointer;
+    color: hsl(178, 100%, 50%);
+}
+#image:hover {
+    /* color: hsl(178, 100%, 50%); */
+    cursor: pointer;
+    opacity: 0.5;
+}
+@media (min-width: 576px){
+    .container{
+        width: 400px;
+        height: auto;
+        margin: 100px auto;
+
+    }
+}
